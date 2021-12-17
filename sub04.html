@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="kr" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <title>SuHyeon's Portfolio</title>
+        <link rel="stylesheet" href="master.css">
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="img/favicon.png" type="image/x-icon">
+        
+
+
+    </head>
+    <body>
+
+      <!--네비게이션-->
+            <header>
+
+                <nav>
+                  <h1><a href="index.html"><img src="img/logo.png" alt="logo"></a></h1>
+                  <ul>
+                    <a href="sub01.html"><li>소개</li></a>
+                    <a href="sub02.html"><li>로고</li></a>
+                    <a href="sub03.html"><li>편집</li></a>
+                    <a href="sub04.html"><li>패키지</li></a>
+                  </ul>
+                </nav>
+              </header>
+      <!--네비게이션-->
+
+
+
+      <div id="sub04_con_wrap">
+          <div id="sub04_con">
+              <div class="sub04_logo slide-right">
+                <a onclick="fnMove('1')"><img src="img/sub04_1.png"
+                onmouseover="this.src='img/sub04_1_2.png'"
+                onmouseout="this.src='img/sub04_1.png'" width="280"></a>
+                <a onclick="fnMove('2')"><img src="img/sub04_2.png"
+                onmouseover="this.src='img/sub04_2_2.png'"
+                onmouseout="this.src='img/sub04_2.png'" width="280"></a>
+              </div>
+
+
+              <!--비건요거트~-->
+              <div class="sub04_a" id="anchor1">
+                  <img src="img/y_01.png" alt="요거트1" width="650">
+                  <div class="y_left"><img src="img/y_02.png" alt="요거트2" width="650"></div>
+                  <img src="img/y_03.png" alt="요거트3" width="650">
+              </div>
+
+              <div class="sub04_text_01">비건은 본래 육류나 계란, 우유 등 동물성 식품을 배제하고
+                식물성 음식을 먹는 채식주의자다.<br>비건 요리의 시장이 체인점까지 영향을 미치는 것을
+                보고 비건 요리에 대해 찾아보다가 <br>"액티비아 비건 요거트"를 보게 되었고 건강한 느낌을
+                주는 디자인이었지만 식욕을 돋우는 <br>디자인은 아니어서 비건에 관심이 있지 않는 사람이나
+                비건을 잘 모르는 사람들이 사 먹지 <br>않을 것 같았다. 그래서 기존의 있던 맛은 이용하되
+                리디자인을 하기로 됐다. 커피 캐리어 형식을 <br>이용해서 들고 다니기 편하게 만들 패키지를
+                선택했고 과일을 단순화해서 귀엽고 발랄한 <br>이미지를 주면서 어떤 맛인지 보여주게끔 만들었다.
+              </div>
+
+
+
+              <!--샴푸바-->
+              <div class="sub04_b_01" id="anchor2">
+                <img src="img/us_01.png" alt="" width="650">
+              </div>
+
+              <div class="sub04_b_02">
+                    <ul>
+                        <li><img src="img/s_01.png" alt="" width="650"></li>
+                        <li><img src="img/s_02.png" alt="" width="650"></li>
+                        <li><img src="img/s_03.png" alt="" width="650"></li>
+                    </ul>
+               </div>
+
+
+
+
+               <div class="sub04_text_02">
+                 샴푸바의 취지에 맞게 재활용이 되는 패키지를 만들려고 했다.<br>
+                 “샴푸바의 재료가 친환경적으로 만들어져있기 때문에 동물이 <br>
+                 다가간다”라는 의미를 넣고 싶어서 사람들에게 사랑받는 고양이를<br>
+                 캐릭터화했고 샴푸바 향에 따라서 그림과 색깔의 콘셉트를 맞추면서도<br>
+                 색깔의 조화가 깨지지 않게 같은 채도로 맞추었다.
+               </div>
+
+
+
+        </div>
+
+
+
+
+
+
+        <footer>
+          <div class="f04_wrap">
+              <div class="f04_top">
+                <img src="img/f_logo.png" alt="logo"></div>
+              <div class="f04_bottom">
+                Copyright 2021 SuHyeon, Lee Portfolio. All Rights Reserved.</div>
+          </div>
+            </footer>
+
+              <div class="header_bg"></div>
+
+
+              <!--특정위치로 쩜프해서 이동 시작 : 마지막 숫자를 조절하면 속도조절이 됩니다.-->
+              <script type="text/javascript" src="js/jquery-latest.js"></script>
+              <script>
+              function fnMove(seq){
+                  var offset = $("#anchor" + seq).offset();
+                  $('html, body').animate({scrollTop : offset.top},500);
+              }
+              </script>
+              <!--특정위치로 쩜프해서 이동 시작-->
+
+  </body>
+</html>
